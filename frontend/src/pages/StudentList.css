@@ -1,0 +1,84 @@
+/* ============================================
+   StudentList.css
+   Styles for the student list page
+   ============================================ */
+
+.list-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.list-header {
+  margin-bottom: 1.5rem;
+}
+
+.list-header h2 {
+  margin: 0.75rem 0 0;
+  font-size: 1.4rem;
+  color: #1e293b;
+}
+
+.search-bar {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 0.6rem 0.85rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #1e293b;
+}
+
+.search-bar input:focus {
+  outline: none;
+  border-color: #2d5a87;
+  box-shadow: 0 0 0 3px rgba(45, 90, 135, 0.12);
+}
+
+.btn-search {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #2d5a87;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-search:hover {
+  background: #1e3a5f;
+}
+
+.btn-clear {
+  padding: 0.6rem 1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  color: #64748b;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-clear:hover {
+  background: #f8fafc;
+}
+
+.student-count {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+}
+
+.loading-text {
+  text-align: center;
+  color: #94a3b8;
+  padding: 2rem;
+}
