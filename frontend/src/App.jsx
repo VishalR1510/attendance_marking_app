@@ -10,6 +10,8 @@ import Dashboard from "./pages/Dashboard";
 import AddStudent from "./pages/AddStudent";
 import StudentList from "./pages/StudentList";
 import AttendancePage from "./pages/AttendancePage";
+import InternalMarks from "./pages/InternalMarks";
+import PerformanceTracker from "./pages/PerformanceTracker";
 import ReportPage from "./pages/ReportPage";
 import "./App.css";
 
@@ -25,6 +27,8 @@ function App() {
             <Route path="/add-student" element={<AddStudent />} />
             <Route path="/students" element={<StudentList />} />
             <Route path="/attendance" element={<AttendancePage />} />
+            <Route path="/internal-marks" element={<InternalMarks />} />
+            <Route path="/performance" element={<PerformanceTracker />} />
             <Route path="/report" element={<ReportPage />} />
           </Routes>
         </main>

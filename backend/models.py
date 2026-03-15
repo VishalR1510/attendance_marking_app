@@ -49,6 +49,18 @@ def create_tables():
             );
         """)
 
+        # Create internal marks table
+        cur.execute("""
+            CREATE TABLE IF NOT EXISTS internal_marks (
+                mark_id SERIAL PRIMARY KEY,
+                student_id INT REFERENCES students(student_id) ON DELETE CASCADE,
+                unit_test_1 INT CHECK (unit_test_1 >= 0 AND unit_test_1 <= 100),
+                unit_test_2 INT CHECK (unit_test_2 >= 0 AND unit_test_2 <= 100),
+                unit_test_3 INT CHECK (unit_test_3 >= 0 AND unit_test_3 <= 100),
+                UNIQUE(student_id)
+            );
+        """)
+
         # Insert default admin teacher if not exists
         cur.execute("""
             INSERT INTO teachers (username, password)

@@ -42,3 +42,16 @@ class AttendanceSubmit(BaseModel):
     """Schema for submitting attendance for multiple students"""
     date: str  # Format: YYYY-MM-DD
     records: List[AttendanceRecord]
+
+
+class InternalMarkRecord(BaseModel):
+    """Schema for a single internal mark record"""
+    student_id: int
+    unit_test_1: Optional[int] = None
+    unit_test_2: Optional[int] = None
+    unit_test_3: Optional[int] = None
+
+
+class InternalMarksSubmit(BaseModel):
+    """Schema for submitting internal marks for multiple students"""
+    records: List[InternalMarkRecord]

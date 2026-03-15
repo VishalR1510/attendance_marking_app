@@ -48,6 +48,20 @@ function Dashboard() {
       path: "/report",
       color: "#f59e0b",
     },
+    {
+      title: "Internal Marks",
+      description: "Enter student unit test marks",
+      icon: "📝",
+      path: "/internal-marks",
+      color: "#ef4444",
+    },
+    {
+      title: "Performance Tracker",
+      description: "Search and view student stats",
+      icon: "📈",
+      path: "/performance",
+      color: "#14b8a6",
+    },
   ];
 
   return (
