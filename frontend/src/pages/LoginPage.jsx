@@ -90,10 +90,6 @@ function LoginPage() {
             {loading ? "Logging in..." : "Login"}
           </button>
         </form>
-
-        <div className="login-footer">
-          <p>Default: admin / admin123</p>
-        </div>
       </div>
     </div>
   );
